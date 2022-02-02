@@ -63,9 +63,9 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope
--- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>tf", "<cmd>lua require'telescope.builtin'.find_files()<cr>", opts)
-keymap("n", "<leader>tg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>tg", "<cmd>lua require'telescope.builtin'.live_grep()<cr>", opts)
+keymap("n", "<leader>tb", "<cmd>lua require'telescope.builtin'.current_buffer_fuzzy_find({sorting_strategy='ascending'})<cr>", opts)
 
 -- Closing buffer
 keymap("n", "<leader>d", ":bdelete<CR>", opts)

@@ -44,10 +44,12 @@ return packer.startup(function(use)
   -- General
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "rebelot/kanagawa.nvim"  -- Colorscheme
+  use "numToStr/Comment.nvim"  -- easy comments
   use "nvim-lua/plenary.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"  -- fuzzy finder
+  use "kyazdani42/nvim-web-devicons"  -- icons for telescope
 
   -- Treesitter
   use {
@@ -57,5 +59,6 @@ return packer.startup(function(use)
 
   -- Toggle Terminal
   use "akinsho/toggleterm.nvim"
+
 
 end)

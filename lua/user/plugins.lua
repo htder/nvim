@@ -48,4 +48,14 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"  -- fuzzy finder
+
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  } 
+
+  -- Toggle Terminal
+  use "akinsho/toggleterm.nvim"
+
 end)

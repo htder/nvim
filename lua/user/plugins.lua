@@ -56,6 +56,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   } 
+  use 'JoosepAlviste/nvim-ts-context-commentstring'  -- treesitter + comments
 
   -- Toggle Terminal
   use "akinsho/toggleterm.nvim"

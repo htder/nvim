@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/henryderbyshire/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/home/henryderbyshire/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
+  },
   ["kanagawa.nvim"] = {
     loaded = true,
     path = "/home/henryderbyshire/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
@@ -107,7 +112,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/henryderbyshire/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    url = "https://github.com/kyazdani43/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,

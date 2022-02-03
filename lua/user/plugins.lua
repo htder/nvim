@@ -1,5 +1,4 @@
 local fn = vim.fn
-
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -57,9 +56,11 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   } 
   use 'JoosepAlviste/nvim-ts-context-commentstring'  -- treesitter + comments
+  use 'windwp/nvim-ts-autotag'  -- using treesitter to autoclose and autorename html tags
+  use 'windwp/nvim-autopairs'  -- using treesitter to complete pairs
+  use 'p00f/nvim-ts-rainbow'  -- rainbow parenteses using treesitter
 
   -- Toggle Terminal
   use "akinsho/toggleterm.nvim"
-
 
 end)

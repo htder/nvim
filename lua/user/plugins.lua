@@ -41,27 +41,44 @@ packer.init {
 return packer.startup(function(use)
   -- My plugins here
   -- General
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "rebelot/kanagawa.nvim"  -- Colorscheme
-  use "numToStr/Comment.nvim"  -- easy comments
+  use { "wbthomason/packer.nvim" } -- Have packer manage itself
+  use { "rebelot/kanagawa.nvim" }  -- Colorscheme
+  use { "numToStr/Comment.nvim" }  -- easy comments
   use { "nvim-lua/plenary.nvim" }
 
   -- Telescope
-  use {"nvim-telescope/telescope.nvim"}  -- fuzzy finder
-  use {"kyazdani43/nvim-web-devicons" }  -- icons for telescope
+  use { "nvim-telescope/telescope.nvim" }  -- fuzzy finder
+  use { "kyazdani42/nvim-web-devicons" }  -- icons for telescope
 
   -- Treesitter
-  use {
-    "nvim-treesitter/nvim-treesitter",
-    run = ":TSUpdate",
-  } 
-  use 'JoosepAlviste/nvim-ts-context-commentstring'  -- treesitter + comments
-  use 'windwp/nvim-ts-autotag'  -- using treesitter to autoclose and autorename html tags
-  use 'windwp/nvim-autopairs'  -- using treesitter to complete pairs
-  use 'p00f/nvim-ts-rainbow'  -- rainbow parenteses using treesitter
-
+  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", } 
+  use { "JoosepAlviste/nvim-ts-context-commentstring" }  -- treesitter + comments
+  use { "windwp/nvim-ts-autotag" }  -- using treesitter to autoclose and autorename html tags
+  use { "windwp/nvim-autopairs" }  -- using treesitter to complete pairs
+  use { "p00f/nvim-ts-rainbow" }  -- rainbow parenteses using treesitter
+  
   -- Toggle Terminal
-  use "akinsho/toggleterm.nvim"
-  use 'lewis6991/impatient.nvim'
+  use { "akinsho/toggleterm.nvim" }
+  use { "lewis6991/impatient.nvim" }
+
+    -- cmp plugins
+  use { "hrsh7th/nvim-cmp" } -- The completion plugin
+  use { "hrsh7th/cmp-buffer" } -- buffer completions
+  use { "hrsh7th/cmp-path" } -- path completions
+  use { "hrsh7th/cmp-cmdline" } -- cmdline completions
+  use { "saadparwaiz1/cmp_luasnip" } -- snippet completions
+  use { "hrsh7th/cmp-nvim-lsp" }
+  use { "hrsh7th/cmp-nvim-lua" }
+
+  -- snippets
+  use { "L3MON4D3/LuaSnip" } --snippet engine
+  use { "rafamadriz/friendly-snippets" } -- a bunch of snippets to use
+
+  -- LSP
+  use { "neovim/nvim-lspconfig" } -- enable LSP
+  use { "williamboman/nvim-lsp-installer" } -- simple to use language server installer
+
+  -- Git
+  use { "lewis6991/gitsigns.nvim" }
 
 end)

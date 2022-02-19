@@ -45,6 +45,7 @@ return packer.startup(function(use)
   use { "rebelot/kanagawa.nvim" }  -- Colorscheme
   use { "numToStr/Comment.nvim" }  -- easy comments
   use { "nvim-lua/plenary.nvim" }
+  use { "Olical/conjure" } -- clojure support
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }  -- fuzzy finder
@@ -56,7 +57,7 @@ return packer.startup(function(use)
   use { "windwp/nvim-ts-autotag" }  -- using treesitter to autoclose and autorename html tags
   use { "windwp/nvim-autopairs" }  -- using treesitter to complete pairs
   use { "p00f/nvim-ts-rainbow" }  -- rainbow parenteses using treesitter
-  
+
   -- Toggle Terminal
   use { "akinsho/toggleterm.nvim" }
   use { "lewis6991/impatient.nvim" }

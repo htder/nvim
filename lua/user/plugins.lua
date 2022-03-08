@@ -52,7 +52,7 @@ return packer.startup(function(use)
   use { "kyazdani42/nvim-web-devicons" }  -- icons for telescope
 
   -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", } 
+  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", }
   use { "JoosepAlviste/nvim-ts-context-commentstring" }  -- treesitter + comments
   use { "windwp/nvim-ts-autotag" }  -- using treesitter to autoclose and autorename html tags
   use { "windwp/nvim-autopairs" }  -- using treesitter to complete pairs

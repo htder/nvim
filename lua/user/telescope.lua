@@ -8,7 +8,10 @@ local actions = require "telescope.actions"
 telescope.setup {
   defaults = {
 
-    theme= {"dropdown"},
+    -- theme= {"dropdown"},
+    layout_config = {
+      vertical = { width = 0.5 }
+    },
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },

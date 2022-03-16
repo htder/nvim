@@ -43,6 +43,7 @@ return packer.startup(function(use)
   -- General
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
   use { "rebelot/kanagawa.nvim" }  -- Colorscheme
+  use { "folke/tokyonight.nvim" }
   use { "numToStr/Comment.nvim" }  -- easy comments
   use { "nvim-lua/plenary.nvim" }
   use { "Olical/conjure" } -- clojure support

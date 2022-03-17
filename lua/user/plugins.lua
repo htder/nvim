@@ -42,11 +42,13 @@ return packer.startup(function(use)
   -- My plugins here
   -- General
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
-  use { "rebelot/kanagawa.nvim" }  -- Colorscheme
-  use { "folke/tokyonight.nvim" }
   use { "numToStr/Comment.nvim" }  -- easy comments
   use { "nvim-lua/plenary.nvim" }
   use { "Olical/conjure" } -- clojure support
+
+  -- Colorschemes
+  use { "rebelot/kanagawa.nvim" }
+  use { "folke/tokyonight.nvim" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }  -- fuzzy finder

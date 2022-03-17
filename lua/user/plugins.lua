@@ -49,6 +49,7 @@ return packer.startup(function(use)
   -- Colorschemes
   use { "rebelot/kanagawa.nvim" }
   use { "folke/tokyonight.nvim" }
+  use { "projekt0n/github-nvim-theme" }
 
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }  -- fuzzy finder

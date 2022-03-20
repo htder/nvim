@@ -67,6 +67,8 @@ keymap("n", "<leader>tf", "<cmd>lua require'telescope.builtin'.find_files()<cr>"
 keymap("n", "<leader>tg", "<cmd>lua require'telescope.builtin'.live_grep()<cr>", opts)
 keymap("n", "<leader>tb", "<cmd>lua require'telescope.builtin'.current_buffer_fuzzy_find({sorting_strategy='ascending'})<cr>", opts)
 keymap("n", "<leader>td", "<cmd>lua require'telescope.builtin'.diagnostics()<cr>", opts);
+-- keymap("n", "<leader>tt", "<cmd> lua require'telescope.builtin'.treesitter()<cr>", opts);
+keymap("n", "<leader>tr", "<cmd> lua require'telescope.builtin'.lsp_references()<cr>", opts);
 
 -- Closing buffer
 keymap("n", "<leader>d", ":bdelete<CR>", opts)

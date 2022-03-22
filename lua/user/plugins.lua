@@ -54,6 +54,7 @@ return packer.startup(function(use)
   -- Telescope
   use { "nvim-telescope/telescope.nvim" }  -- fuzzy finder
   use { "kyazdani42/nvim-web-devicons" }  -- icons for telescope
+  use { "nvim-telescope/telescope-file-browser.nvim" }
 
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate", }

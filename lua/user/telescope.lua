@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 local actions = require "telescope.actions"
+local fb_actions = require "telescope".extensions.file_browser.actions
 
 telescope.setup {
   defaults = {
@@ -95,5 +96,19 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+    file_browser = {
+      mappings = {
+        ["i"] = {
+          ["<leader>tbc"] = fb_actions.create,
+          ["<leader>tbd"] = fb_actions.remove,
+        },
+        ["n"] = {
+          ["<leader>tbc"] = fb_actions.create,
+          ["<leader>tbd"] = fb_actions.remove,
+        },
+      }
+    }
   },
 }
+
+telescope.load_extension "file_browser"

@@ -74,6 +74,10 @@ keymap("n", "<leader>td", ":Telescope file_browser<cr>", opts)
 -- Closing buffer
 keymap("n", "<leader>d", ":bdelete<CR>", opts)
 
+-- Changing Colorscheme
+keymap("n", "<leader>9", [[<Cmd>lua require('material.functions').change_style('lighter')<CR>]], opts)
+keymap("n", "<leader>0", [[<Cmd>lua require('material.functions').change_style('deep ocean')<CR>]], opts)
+
 -- Removing arrow keys
 keymap("i", "<Up>", "<Nop>", opts)
 keymap("i", "<Left>", "<Nop>", opts)

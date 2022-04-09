@@ -86,6 +86,7 @@ return packer.startup(function(use)
   use { "williamboman/nvim-lsp-installer" } -- simple to use language server installer
   use { "tamago324/nlsp-settings.nvim"}
   use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
+  use { "mfussenegger/nvim-jdtls" } -- java support
 
   -- Git
   use { "lewis6991/gitsigns.nvim" }
